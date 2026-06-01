@@ -1,194 +1,298 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>For Dental Practices — Denterra</title>
-  <meta name="description" content="Scale your dental practice with pre-certified, HIPAA-trained remote Insurance Verification and RCM specialists. Built for U.S. dental offices." />
-  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/styles.css" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Denterra — For Dental Practices</title>
+<meta name="description" content="Scale your dental practice with experienced, skill-verified remote Insurance Verification and RCM team members." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="icon" type="image/png" href="assets/favicon.png"/>
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<header class="nav">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo" aria-label="Denterra home">
-      <img src="assets/logo.svg" alt="Denterra" />
+<!-- ================ NAV ================ -->
+<nav class="nav">
+  <div class="wrap nav-row">
+    <a href="index.html" class="brand">
+      <img class="brand-logo" src="assets/denterra-teal.png" alt="Denterra"/>
     </a>
-    <nav><ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="dental-practices.html">Dental Practices</a></li>
-      <li><a href="professionals.html">Professionals</a></li>
-      <li><a href="our-stories.html">Our Stories</a></li>
-      <li><a href="claims-cloud.html">Claims Cloud</a></li>
-    </ul></nav>
-    <div class="nav-actions">
-      <a href="#contact" class="btn btn-primary">Book a Call</a>
-      <button class="nav-toggle" aria-label="Open menu"><span></span></button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="dental-practices.html" class="active">Dental Practices</a>
+      <a href="professionals.html">Professionals</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="stories.html">Stories</a>
+    </div>
+    <a class="btn btn-primary" href="https://calendly.com/russell-hiredenterra/30min?month=2026-06" target="_blank" rel="noopener">Book a Call <span class="arr">→</span></a>
+  </div>
+</nav>
+
+<!-- ================ PAGE HERO ================ -->
+<header class="page-hero split" data-screen-label="01 Hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow on-dark">For Dental Practices</span>
+      <h1>Pre-vetted admin team members, <em>here for the long haul.</em></h1>
+      <p class="lede">Insurance Verification, Claims &amp; Collections, Treatment Coordination, Credentialing — handled by experienced team members who know dental and stay with you.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="https://calendly.com/russell-hiredenterra/30min?month=2026-06" target="_blank" rel="noopener">Book a Call <span class="arr">→</span></a>
+        <a href="#process" class="btn btn-outline-on-dark">See how it works</a>
+      </div>
+    </div>
+    <div class="hero-admin-graphic">
+      <div class="hag-head">
+        <span class="hag-label">Your front desk · today</span>
+        <span class="hag-time">2:47 PM</span>
+      </div>
+      <div class="hag-rows">
+        <div class="hag-row alert">
+          <span class="hag-name">Verifications pending</span>
+          <span class="hag-val">28</span>
+        </div>
+        <div class="hag-row alert">
+          <span class="hag-name">Claims unsubmitted</span>
+          <span class="hag-val">14</span>
+        </div>
+        <div class="hag-row alert">
+          <span class="hag-name">A/R aged 60+ days</span>
+          <span class="hag-val">$48,200</span>
+        </div>
+        <div class="hag-row warn">
+          <span class="hag-name">Recalls pending</span>
+          <span class="hag-val">19</span>
+        </div>
+        <div class="hag-row warn">
+          <span class="hag-name">Calls to return</span>
+          <span class="hag-val">12</span>
+        </div>
+        <div class="hag-row warn">
+          <span class="hag-name">Pre-auths pending</span>
+          <span class="hag-val">7</span>
+        </div>
+      </div>
+      <div class="hag-foot">
+        <span class="hag-foot-label">Hours actually spent with patients</span>
+        <span class="hag-foot-val">2.4</span>
+      </div>
     </div>
   </div>
 </header>
-<div class="mobile-menu">
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="dental-practices.html">Dental Practices</a></li>
-    <li><a href="professionals.html">Professionals</a></li>
-    <li><a href="our-stories.html">Our Stories</a></li>
-    <li><a href="claims-cloud.html">Claims Cloud</a></li>
-  </ul>
-  <a href="#contact" class="btn btn-primary">Book a Call</a>
+
+<!-- ================ PROBLEM ================ -->
+<section id="problem" class="has-paper-bg" data-screen-label="02 Problem">
+  <div class="paper-bg" aria-hidden="true">
+    <div class="paper paper-1">
+      <div class="paper-head">
+        <div class="paper-no">No. 04-417</div>
+        <div class="paper-stamp">Verified</div>
+      </div>
+      <div class="paper-row"><div class="paper-k">Patient</div><div class="paper-v">Sarah Chen</div></div>
+      <div class="paper-row"><div class="paper-k">Carrier</div><div class="paper-v">Aetna PPO</div></div>
+      <div class="paper-row"><div class="paper-k">Coverage</div><div class="paper-v">92 / 80 / 50</div></div>
+      <div class="paper-row"><div class="paper-k">Annual max</div><div class="paper-v">$1,500</div></div>
+    </div>
+    <div class="paper paper-2">
+      <div class="paper-head"><div class="paper-no">Claim · D2740 · #14</div></div>
+      <div class="paper-list">
+        <div><span class="check">✓</span> Coverage confirmed</div>
+        <div><span class="check">✓</span> Pre-auth attached</div>
+        <div><span class="check">✓</span> Submitted to carrier</div>
+      </div>
+    </div>
+    <div class="paper paper-3">
+      <div class="paper-head"><div class="paper-no">A/R · this week</div></div>
+      <div class="paper-line"><span>MetLife · 62d</span><span class="amt">+$4,200</span></div>
+      <div class="paper-line"><span>Delta · 30d</span><span class="amt">+$2,840</span></div>
+      <div class="paper-line"><span>Cigna · 14d</span><span class="amt">pending</span></div>
+    </div>
+    <div class="paper paper-4">
+      <div class="paper-head"><div class="paper-no">Eligibility · today</div></div>
+      <div class="paper-line"><span>12 patients</span><span class="amt">checked</span></div>
+      <div class="paper-line"><span>3 carriers</span><span class="amt">verified</span></div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Sound familiar?</span>
+      <h2 class="display">Dental admin work is <em>eating your practice.</em></h2>
+      <p class="lede">If any of these are happening, Denterra was built for you.</p>
+    </div>
+    <div class="problem-grid">
+      <article class="problem-card">
+        <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+        <h3>Verifications are eating your front desk's day.</h3>
+        <p>Your team is chasing carrier portals instead of greeting patients and building relationships. Production suffers.</p>
+      </article>
+      <article class="problem-card">
+        <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3L2 21h20L12 3z"/><path d="M12 10v5M12 18h.01"/></svg></span>
+        <h3>Claims sit in the queue for weeks.</h3>
+        <p>A/R keeps creeping up. Rejections pile up. Nobody has time to actually work the aging report.</p>
+      </article>
+      <article class="problem-card">
+        <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.5 8.5 0 11-17 0 8.5 8.5 0 0117 0z"/><path d="M9 11l3 3 5-5"/></svg></span>
+        <h3>Local hiring is slow and expensive.</h3>
+        <p>Months to fill a seat, and the pool keeps shrinking. Meanwhile the workload isn't slowing down.</p>
+      </article>
+      <article class="problem-card">
+        <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><circle cx="9" cy="10" r=".7" fill="currentColor"/><circle cx="15" cy="10" r=".7" fill="currentColor"/></svg></span>
+        <h3>Burnout in the admin seat.</h3>
+        <p>Good office managers are quitting because they're drowning. Turnover compounds the problem.</p>
+      </article>
+      <article class="problem-card">
+        <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7H14a3.5 3.5 0 010 7H6"/></svg></span>
+        <h3>Revenue leaking through missed codes.</h3>
+        <p>Without real dental billing expertise, money slips through the cracks every single month.</p>
+      </article>
+      <article class="problem-card">
+        <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M9 7h6M9 11h6M9 15h4"/></svg></span>
+        <h3>You've tried VAs. It didn't stick.</h3>
+        <p>Generic virtual assistants don't know dental. Denterra team members do — because we trained them to.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================ CERTIFIED ================ -->
+<section class="bg-mint" id="certified" data-screen-label="03 Certified">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Vetted &amp; verified, always</span>
+      <h2 class="display">Experienced <em>before</em> they ever meet you.</h2>
+      <p class="lede">No on-the-job guesswork. We hire people who already have industry experience, then verify they have the core skills below before a single interview.</p>
+    </div>
+    <div class="cred-grid">
+      <div class="cred-card"><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg></span><span class="label">HIPAA verified</span></div>
+      <div class="cred-card"><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/></svg></span><span class="label">1–2 yrs Insurance Verification</span></div>
+      <div class="cred-card"><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 7h16M4 12h16M4 17h10"/></svg></span><span class="label">Dental Terminology Proficiency</span></div>
+      <div class="cred-card"><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span><span class="label">Top 20 Procedure Codes + Groupings</span></div>
+      <div class="cred-card"><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg></span><span class="label">Dentrix · Eaglesoft · Open Dental</span></div>
+      <div class="cred-card"><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 010 18M12 3a15 15 0 000 18"/></svg></span><span class="label">Top 10 Dental Insurance Portals</span></div>
+      <div class="cred-card"><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 11l9-8 9 8v9a2 2 0 01-2 2h-4v-6h-6v6H5a2 2 0 01-2-2v-9z"/></svg></span><span class="label">Medicare / Medicaid Billing Basics</span></div>
+      <div class="cred-card"><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12l5 5L20 6"/></svg></span><span class="label">Proven Remote Work Capability</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================ ABOUT ================ -->
+<!-- ================ ROLES ================ -->
+<section class="bg-mint" id="roles" data-screen-label="05 Roles">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">What they can handle</span>
+      <h2 class="display">Roles your remote hire can fill — once you train them <em>your way.</em></h2>
+      <p class="lede">Your Denterra hire arrives with real dental admin experience and verified core skills. From there, you train them on your specific workflows the same way you'd onboard any other hire. These are the roles they're ready to grow into on your team.</p>
+    </div>
+    <div class="roles-grid">
+      <article class="role-card">
+        <span class="icon-tile solid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/></svg></span>
+        <h3>Insurance Verification Team Member</h3>
+        <p>Eligibility, benefits, coverage breakdowns, and patient cost estimates — done before the appointment.</p>
+        <div class="role-tags"><span class="tag">Dentrix</span><span class="tag">Portals</span><span class="tag">HIPAA</span></div>
+      </article>
+      <article class="role-card">
+        <span class="icon-tile solid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7H14a3.5 3.5 0 010 7H6"/></svg></span>
+        <h3>Claims & Collections Team Member</h3>
+        <p>Submits clean claims, works aging A/R, manages appeals, and recovers the revenue your practice earned.</p>
+        <div class="role-tags"><span class="tag">RCM</span><span class="tag">Appeals</span><span class="tag">Aging</span></div>
+      </article>
+      <article class="role-card">
+        <span class="icon-tile solid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/></svg></span>
+        <h3>Treatment Coordinator Support</h3>
+        <p>Pre-auth submissions, treatment plan follow-ups, patient financial conversations, scheduling gaps filled.</p>
+        <div class="role-tags"><span class="tag">Pre-auth</span><span class="tag">Scheduling</span></div>
+      </article>
+      <article class="role-card">
+        <span class="icon-tile solid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></span>
+        <h3>Patient Coordinator</h3>
+        <p>Recall, reactivation, payment plans, appointment confirmations — all the phone work that compounds production.</p>
+        <div class="role-tags"><span class="tag">Recall</span><span class="tag">Comms</span></div>
+      </article>
+      <article class="role-card">
+        <span class="icon-tile solid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg></span>
+        <h3>Credentialing Team Member</h3>
+        <p>Provider credentialing, CAQH, carrier applications, and re-credentialing — fully handled.</p>
+        <div class="role-tags"><span class="tag">CAQH</span><span class="tag">Carriers</span></div>
+      </article>
+      <article class="role-card">
+        <span class="icon-tile solid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></span>
+        <h3>Admin Team Lead</h3>
+        <p>For multi-op and DSO-scale practices — a senior team member to run point on your full remote team.</p>
+        <div class="role-tags"><span class="tag">DSO</span><span class="tag">Multi-op</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================ PROCESS — Scaling with Denterra ================ -->
+<section class="bg-dark" id="process" data-screen-label="06 Process">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow on-dark">Scaling with Denterra</span>
+      <h2 class="display on-dark">A process built for <em>lasting results,</em> not just a quick placement.</h2>
+      <p class="lede">Six steps. Every candidate. Every practice.</p>
+    </div>
+    <div class="process-grid">
+      <article class="process-card"><span class="process-num">1</span><h3>We find and verify the right people.</h3><p>We recruit internationally for people who already have dental admin experience, then verify their core skills against what your practice needs. Character matters as much as credentials.</p></article>
+      <article class="process-card"><span class="process-num">2</span><h3>We prep them for your world.</h3><p>Before any introduction, we prepare every candidate for U.S. dental office norms, communication expectations, and remote-work protocols — so the transition is smooth from day one.</p></article>
+      <article class="process-card"><span class="process-num">3</span><h3>We learn your practice — deeply.</h3><p>A dedicated discovery session to understand your long-term goals, RCM workflows, software stack, and how you want to build your team over time.</p></article>
+      <article class="process-card"><span class="process-num">4</span><h3>We match and you choose.</h3><p>We present your best-fit candidate options. You interview the ones you want and make the final call. No pressure, no surprises.</p></article>
+      <article class="process-card"><span class="process-num">5</span><h3>We integrate — technically and culturally.</h3><p>Phone lines, practice management access, secure comms. Plus a proven process for helping dental offices build real connection with their international team members.</p></article>
+      <article class="process-card"><span class="process-num">6</span><h3>We stay in it with you.</h3><p>Ongoing KPI tracking, performance management, and development support. A long-term partnership, not a one-time transaction.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ================ FAQ ================ -->
+<section id="faq" data-screen-label="09 FAQ">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">FAQ</span>
+      <h2 class="display">Questions practice owners <em>ask us.</em></h2>
+    </div>
+    <div class="faq-wrap">
+      <details class="faq-item" open><summary class="faq-q"><span>How long until someone is working in my practice?</span><span class="faq-q-icon"></span></summary><div class="faq-a">Most practices have a team member seated and trained within 2–3 weeks from discovery call. For urgent seats, we can accelerate to 7–10 days.</div></details>
+      <details class="faq-item"><summary class="faq-q"><span>Are they employees or contractors?</span><span class="faq-q-icon"></span></summary><div class="faq-a">Denterra team members are international contractors fully managed by us. You get a long-term team member without the W-2 overhead, payroll tax burden, or HR complexity. We handle pay, benefits, equipment, and performance management on our side.</div></details>
+      <details class="faq-item"><summary class="faq-q"><span>Which practice management systems do you support?</span><span class="faq-q-icon"></span></summary><div class="faq-a">Every Denterra team member is introduced to Dentrix, Eaglesoft, and Open Dental, and typically has more extensive experience with at least one. They also work across most major U.S. carrier portals.</div></details>
+      <details class="faq-item"><summary class="faq-q"><span>Is this HIPAA-compliant?</span><span class="faq-q-icon"></span></summary><div class="faq-a">Yes. Every team member completes our HIPAA training and certification before placement. We use secure workstation tooling, role-based access controls, and BAAs are signed with every practice partner before a team member starts.</div></details>
+      <details class="faq-item"><summary class="faq-q"><span>What happens if the fit isn't right?</span><span class="faq-q-icon"></span></summary><div class="faq-a">We re-match at no additional cost. Our integration process is built to catch fit issues in the first 30 days — and we stay in it with you well past that, with consistent monthly check-ins to make sure things keep moving in the right direction.</div></details>
+      <details class="faq-item"><summary class="faq-q"><span>How is pricing structured?</span><span class="faq-q-icon"></span></summary><div class="faq-a">Flat per-hour pricing — $16/hour for full-time — tied to the role. No placement fees, no surprise overages. We'll walk you through the exact numbers on your discovery call.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ================ CTA ================ -->
+<div class="cta-banner-wrap" id="cta">
+  <div class="wrap">
+    <div class="cta-banner">
+      <span class="eyebrow on-dark">20 minutes</span>
+      <h2>Let's see if Denterra <em>fits your practice.</em></h2>
+      <p class="lede on-dark">Book a discovery call. We'll listen first, ask the right questions, and share what a realistic plan looks like for your office.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="https://calendly.com/russell-hiredenterra/30min?month=2026-06" target="_blank" rel="noopener">Book a Call <span class="arr">→</span></a>
+        <a href="stories.html" class="btn btn-outline-on-dark">Read our stories</a>
+      </div>
+    </div>
+  </div>
 </div>
 
-<!-- HEADER -->
-<section class="page-header">
-  <div class="container">
-    <span class="eyebrow on-dark">For Dental Practices</span>
-    <h1>The admin help your practice actually needs — <span style="color: var(--mint)">fully certified</span>, fully supported.</h1>
-    <p class="lead">Stop losing evenings to insurance verifications and chasing claims. Denterra places pre-trained remote specialists into your team as real team members — not gig-workers, not call-center agents.</p>
-    <div class="hero-cta mt-md">
-      <a href="#contact" class="btn btn-mint">Book a Call</a>
-      <a href="#how" class="btn btn-ghost-dark">See the process</a>
-    </div>
-  </div>
-</section>
-
-<!-- PAIN POINTS -->
-<section>
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Sound Familiar?</span>
-      <h2>Dental admin work is eating your practice.</h2>
-      <p>If any of these are happening, Denterra was built for you.</p>
-    </div>
-    <div class="feature-grid">
-      <div class="feature"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Verifications are eating your front desk's day.</h3><p>Your team is chasing carrier portals instead of greeting patients and building relationships. Production suffers.</p></div>
-      <div class="feature"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 22 22 22 12 2"/><path d="M12 9v4M12 17h.01"/></svg></div><h3>Claims sit in the queue for weeks.</h3><p>A/R keeps creeping up. Rejections pile up. Nobody has time to actually work the aging report.</p></div>
-      <div class="feature"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div><h3>Local hiring is slow and expensive.</h3><p>Months to fill a seat, and the pool keeps shrinking. Meanwhile the workload isn't slowing down.</p></div>
-      <div class="feature"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg></div><h3>Burnout in the admin seat.</h3><p>Good office managers are quitting because they're drowning. Turnover compounds the problem.</p></div>
-      <div class="feature"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div><h3>Revenue leaking through missed codes.</h3><p>Without real dental billing expertise, money slips through the cracks every single month.</p></div>
-      <div class="feature"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/></svg></div><h3>You've tried VAs. It didn't stick.</h3><p>Generic virtual assistants don't know dental. Denterra specialists do — because we trained them to.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- WHAT WE PLACE -->
-<section style="background: var(--mint-bg);">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Roles We Place</span>
-      <h2>Remote specialists, built for dental admin.</h2>
-      <p>Every Denterra specialist arrives certified in HIPAA, dental terminology, insurance portals, and your practice management software.</p>
-    </div>
-    <div class="roles">
-      <div class="role">
-        <div class="role-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6l-8-4z"/><polyline points="9 12 11 14 15 10"/></svg></div>
-        <h4>Insurance Verification Specialist</h4>
-        <p>Eligibility, benefits, coverage breakdowns, and patient cost estimates — done before the appointment.</p>
-        <div class="chips"><span class="chip">Dentrix</span><span class="chip">Portals</span><span class="chip">HIPAA</span></div>
+<!-- ================ FOOTER ================ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="brand"><img class="brand-logo" src="assets/denterra-white.png" alt="Denterra"/></a>
+        <p class="foot-blurb">Redefining the dental workforce with experienced, skill-verified remote Insurance Verification and RCM team members.</p>
       </div>
-      <div class="role">
-        <div class="role-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
-        <h4>Claims & Collections Specialist</h4>
-        <p>Submits clean claims, works aging A/R, manages appeals, and recovers the revenue your practice earned.</p>
-        <div class="chips"><span class="chip">RCM</span><span class="chip">Appeals</span><span class="chip">Aging</span></div>
-      </div>
-      <div class="role">
-        <div class="role-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/></svg></div>
-        <h4>Treatment Coordinator Support</h4>
-        <p>Pre-auth submissions, treatment plan follow-ups, patient financial conversations, scheduling gaps filled.</p>
-        <div class="chips"><span class="chip">Pre-auth</span><span class="chip">Scheduling</span></div>
-      </div>
-      <div class="role">
-        <div class="role-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
-        <h4>Patient Coordinator</h4>
-        <p>Recall, reactivation, payment plans, appointment confirmations — all the phone work that compounds production.</p>
-        <div class="chips"><span class="chip">Recall</span><span class="chip">Comms</span></div>
-      </div>
-      <div class="role">
-        <div class="role-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-7"/></svg></div>
-        <h4>Credentialing Specialist</h4>
-        <p>Provider credentialing, CAQH, carrier applications, and re-credentialing — fully handled.</p>
-        <div class="chips"><span class="chip">CAQH</span><span class="chip">Carriers</span></div>
-      </div>
-      <div class="role">
-        <div class="role-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
-        <h4>Admin Team Lead</h4>
-        <p>For multi-op and DSO-scale practices — a senior specialist to run point on your full remote team.</p>
-        <div class="chips"><span class="chip">DSO</span><span class="chip">Multi-op</span></div>
-      </div>
+      <div class="foot-col"><h5>Solutions</h5><ul><li><a href="dental-practices.html">For Dental Practices</a></li><li><a href="professionals.html">For Professionals</a></li><li><a href="pricing.html">Pricing</a></li></ul></div>
+      <div class="foot-col"><h5>Company</h5><ul><li><a href="stories.html">Our Stories</a></li><li><a  href="https://calendly.com/russell-hiredenterra/30min?month=2026-06" target="_blank" rel="noopener">Book a Call</a></li><li><a href="mailto:hello@denterra.com">hello@denterra.com</a></li></ul></div>
+      <div class="foot-col"><h5>Impact</h5><ul><li><a href="stories.html#impact">Social Impact</a></li><li><a href="#">Recruitment Partners</a></li></ul></div>
     </div>
-  </div>
-</section>
-
-<!-- HOW IT WORKS (full 6 steps) -->
-<section id="how">
-  <div class="container">
-    <div class="how">
-      <div class="section-head" style="margin-bottom: 0;">
-        <span class="eyebrow on-dark">Scaling With Denterra</span>
-        <h2 style="color:#fff;">A process built for lasting results, not just a quick placement.</h2>
-      </div>
-      <div class="steps" style="grid-template-columns: repeat(2, 1fr); margin-top: 40px;">
-        <div class="step"><div class="step-num">1</div><h4>We find and certify the right people.</h4><p>We recruit internationally for motivated professionals with foundational IV experience and a proven remote-work track record. Every candidate goes through our dental-specific certification program — HIPAA training, dental terminology, procedure codes, insurance portals, and practice management software — so they arrive ready, not learning on the job. Character matters as much as credentials.</p></div>
-        <div class="step"><div class="step-num">2</div><h4>We prep them for your world.</h4><p>Before any introduction, we prepare every candidate for U.S. dental office norms, communication expectations, and remote-work protocols — so the transition into your team is smooth and professional from day one.</p></div>
-        <div class="step"><div class="step-num">3</div><h4>We learn your practice — deeply.</h4><p>A dedicated discovery session to understand your long-term goals, RCM workflows, software stack, and how you want to build your team over time. We establish your point of contact and align on exactly what success looks like for your office.</p></div>
-        <div class="step"><div class="step-num">4</div><h4>We match and you choose.</h4><p>Based on everything we've learned about your practice, we present your best-fit candidate options. You interview the ones you want and make the final call. No pressure, no surprises.</p></div>
-        <div class="step"><div class="step-num">5</div><h4>We integrate them — technically and culturally.</h4><p>We help handle the full tech setup: phone lines, practice management software access, and secure communication systems. And we have a proven process for helping dental offices build real connection and culture with their international team members.</p></div>
-        <div class="step"><div class="step-num">6</div><h4>We stay in it with you.</h4><p>After placement, we follow up consistently — tracking KPIs, managing performance, and supporting your team member's ongoing development as they grow deeper into your RCM process. This is a long-term partnership, not a one-time transaction.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section>
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">FAQ</span>
-      <h2>Questions practice owners ask us.</h2>
-    </div>
-    <div class="faq">
-      <details open><summary>How long until someone is working in my practice?</summary><p>Most practices have a specialist seated and trained within 2–3 weeks from discovery call. For urgent seats, we can accelerate to 7–10 days.</p></details>
-      <details><summary>Are they employees or contractors?</summary><p>Denterra specialists are engaged through us — you don't handle international payroll, compliance, or HR. They work exclusively with your practice and integrate like a team member.</p></details>
-      <details><summary>Which practice management systems do you support?</summary><p>Dentrix, Eaglesoft, and Open Dental out of the box. We've also placed specialists on Curve, Denticon, and tab32.</p></details>
-      <details><summary>Is this HIPAA-compliant?</summary><p>Yes. Every specialist is HIPAA-trained and certified before placement. We use secure, encrypted communication systems and follow BAA-ready workflows.</p></details>
-      <details><summary>What happens if the fit isn't right?</summary><p>We replace quickly — at no extra charge inside the guarantee window. In practice, our screening catches most issues before placement.</p></details>
-      <details><summary>How is pricing structured?</summary><p>Flat monthly per-seat pricing based on role and hours. No per-claim fees, no per-verification charges, no surprises. We'll walk you through exact numbers on the discovery call.</p></details>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section>
-  <div class="container">
-    <div class="cta-block" id="contact">
-      <span class="eyebrow on-dark">20 minutes</span>
-      <h2>Let's see if Denterra fits your practice.</h2>
-      <p>Book a discovery call. We'll listen first, ask the right questions, and share what a realistic plan looks like for your office.</p>
-      <div class="hero-cta"><a href="mailto:hello@denterra.com" class="btn btn-mint">Book a Call</a><a href="our-stories.html" class="btn btn-ghost-dark">Read our stories</a></div>
-    </div>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-logo">
-          <img src="assets/logo-light.svg" alt="Denterra" />
-        </div>
-        <p class="footer-tag">Redefining the dental workforce with pre-certified, HIPAA-trained remote Insurance Verification and RCM specialists.</p>
-      </div>
-      <div class="footer-col"><h5>Solutions</h5><ul><li><a href="dental-practices.html">For Dental Practices</a></li><li><a href="professionals.html">For Professionals</a></li><li><a href="claims-cloud.html">Claims Cloud AI</a></li></ul></div>
-      <div class="footer-col"><h5>Company</h5><ul><li><a href="our-stories.html">Our Stories</a></li><li><a href="#contact">Book a Call</a></li><li><a href="mailto:hello@denterra.com">hello@denterra.com</a></li></ul></div>
-      <div class="footer-col"><h5>Impact</h5><ul><li><a href="our-stories.html#impact">Social Impact</a></li><li><a href="our-stories.html#partners">Recruitment Partners</a></li></ul></div>
-    </div>
-    <div class="footer-bottom"><div>© 2026 Denterra. All rights reserved.</div><div>A Hybryd spin-off · Built for dental practices</div></div>
+    <div class="foot-bottom"><span>© 2026 Denterra. All rights reserved.</span><span>A Hybryd spin-off · Built for dental practices</span></div>
   </div>
 </footer>
-<script src="assets/script.js"></script>
+
 </body>
 </html>
