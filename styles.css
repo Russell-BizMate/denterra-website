@@ -3700,11 +3700,14 @@ img.hero-orbit.baked-slot { object-fit: cover; }
    MOBILE — hamburger nav + fluid type (appended last so it wins)
    ===================================================== */
 .nav-burger { display: none; }
+.nav-menu-cta { display: none; }
 
 @media (max-width: 1080px) {
   .nav-row { flex-wrap: wrap; row-gap: 0; }
   .brand { order: 1; margin-right: auto; }
-  .nav-row > .btn-primary { order: 2; padding: 10px 16px; font-size: 14px; }
+  /* compact CTA in the bar, beside the hamburger */
+  .nav-row > .btn-primary { order: 2; padding: 9px 15px; font-size: 13px; }
+  .nav-row > .btn-primary .arr { display: none; }
 
   .nav-burger {
     order: 3; display: inline-flex; flex-direction: column;
@@ -3737,6 +3740,8 @@ img.hero-orbit.baked-slot { object-fit: cover; }
   }
   .nav-links a.active::after { display: none; }
   .nav-links a.active { color: var(--mint-600); }
+  /* CTA lives in the bar instead, so hide the dropdown copy */
+  .nav-links .nav-menu-cta { display: none; }
 }
 
 @media (max-width: 640px) {
@@ -3753,6 +3758,11 @@ img.hero-orbit.baked-slot { object-fit: cover; }
 
   .ctas { flex-wrap: wrap; gap: 12px; }
   .ctas .btn { flex: 1 1 auto; justify-content: center; }
+
+  /* keep team photos two-per-row so they aren't full-screen tall */
+  .team-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .team-name { font-size: 18px; }
+  .team-meta { padding: 12px 12px 14px; }
 
   .cta-banner { padding: 40px 26px; }
   .sourcing-band { padding: 30px 20px; }
